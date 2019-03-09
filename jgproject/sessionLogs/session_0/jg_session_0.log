@@ -1,0 +1,506 @@
+# ----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2019.12
+# platform  : Linux 3.10.0-1160.119.1.el7.x86_64
+# version   : 2019.12p002 64 bits
+# build date: 2020.02.27 18:30:54 PST
+# ----------------------------------------
+# started   : 2023-02-10 04:15:11 IST
+# hostname  : compute-srv5.atme.in.eda.atme.in
+# pid       : 62768
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:44319' '-style' 'windows' '-data' 'AQAAADx/////AAAAAAAAA3oBAAAAEABMAE0AUgBFAE0ATwBWAEUAAAAAAAAB4A==' '-proj' '/home/sgeuser83/Desktop/sourabh/lint_riscv/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/sgeuser83/Desktop/sourabh/lint_riscv/jgproject/.tmp/.initCmds.tcl' 'run.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2020 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/sgeuser83/Desktop/sourabh/lint_riscv/jgproject/sessionLogs/session_0
+
+/home/sgeuser83/Desktop/sourabh/lint_riscv/jgproject/jg.log
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_afl".
+INFO: reading configuration file "/home/sgeuser83/.config/jasper/jaspergold.conf".
+% check_superlint -init
+INFO (INL204): Disabling pipeline elaboration since it is not supported in Superlint App.
+% # ------------------------------------
+% # Clear previous settings
+% # ------------------------------------
+% clear -all
+INFO (IPF121): Cleared environment completely for new design analysis.
+% 
+% 
+% 
+% # ------------------------------------
+% # Enable Superlint only
+% # ------------------------------------
+% config_rtlds -rule -enable  -domain "LINT"
+% config_rtlds -rule -disable -domain "AUTO_FORMAL"
+% config_rtlds -rule -disable -category "NAMING FILEFORMAT"
+% 
+% # ------------------------------------
+% # Analyze RTL
+% # ------------------------------------
+%  analyze -verilog -f compile1.f
+[-- (VERI-1482)] Analyzing Verilog file 'inst_mem.v'
+[-- (VERI-1482)] Analyzing Verilog file 'pc_reg.v'
+[-- (VERI-1482)] Analyzing Verilog file 'if_stage_simple_btb.v'
+[-- (VERI-1482)] Analyzing Verilog file 'dynamic_branch_predictor.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_file.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_read.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_write.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb.v'
+[-- (VERI-1482)] Analyzing Verilog file 'register_file.v'
+[-- (VERI-1482)] Analyzing Verilog file 'control_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'top_decode.v'
+[-- (VERI-1482)] Analyzing Verilog file 'decode_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'arithmetic_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'logical_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'shift_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'compare_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'branch_jump_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'alu_top32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'forwarding_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'execute_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'ex_mem_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_memory.v'
+[-- (VERI-1482)] Analyzing Verilog file 'load_datapath.v'
+[-- (VERI-1482)] Analyzing Verilog file 'store_datapath.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_mem_top.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mem_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mem_wb_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'wb_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'if_id_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'id_ex_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'hazard_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'rv32i_core.v'
+% 
+% # ------------------------------------
+% # Elaborate design
+% # ------------------------------------
+% elaborate
+[INFO (HIER-8002)] rv32i_core.v(456): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] rv32i_core.v(5): compiling module 'rv32i_core'
+[INFO (VERI-1018)] if_stage_simple_btb.v(1): compiling module 'if_stage_simple_btb'
+[INFO (VERI-1018)] pc_reg.v(2): compiling module 'pc_reg'
+[INFO (VERI-1018)] btb.v(1): compiling module 'btb'
+[INFO (VERI-1018)] btb_read.v(2): compiling module 'btb_read'
+[INFO (VERI-1018)] btb_write.v(3): compiling module 'btb_write'
+[INFO (VERI-1018)] dynamic_branch_predictor.v(6): compiling module 'dynamic_branch_predictor'
+[INFO (VERI-1018)] btb_file.v(5): compiling module 'btb_file'
+[INFO (VERI-1018)] inst_mem.v(1): compiling module 'inst_mem'
+[WARN (VERI-9033)] inst_mem.v(11): array mem (size 32768) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[WARN (VERI-1060)] inst_mem.v(17): 'initial' construct ignored
+[INFO (VERI-1018)] if_id_pipe.v(2): compiling module 'if_id_pipe'
+[INFO (VERI-1018)] top_decode.v(2): compiling module 'top_decode'
+[INFO (VERI-1018)] decode_unit.v(1): compiling module 'decode_unit'
+[INFO (VERI-1018)] control_unit.v(1): compiling module 'control_unit'
+[INFO (VERI-1018)] register_file.v(1): compiling module 'register_file'
+[WARN (VERI-1060)] register_file.v(28): 'initial' construct ignored
+[INFO (VERI-1018)] hazard_unit.v(1): compiling module 'hazard_unit'
+[INFO (VERI-1018)] id_ex_pipe.v(1): compiling module 'id_ex_pipe'
+[INFO (VERI-1018)] forwarding_unit.v(2): compiling module 'forwarding_unit'
+[INFO (VERI-1018)] execute_stage.v(1): compiling module 'execute_stage'
+[INFO (VERI-1018)] alu_top32.v(4): compiling module 'alu_top32'
+[INFO (VERI-1018)] arithmetic_unit32.v(64): compiling module 'arithmetic_unit32'
+[INFO (VERI-1018)] logical_unit32.v(1): compiling module 'logical_unit32'
+[INFO (VERI-1018)] shift_unit32.v(68): compiling module 'shift_unit32'
+[INFO (VERI-1018)] compare_unit32.v(1): compiling module 'compare_unit32'
+[INFO (VERI-1018)] branch_jump_unit.v(4): compiling module 'branch_jump_unit'
+[INFO (VERI-1018)] ex_mem_pipe.v(87): compiling module 'ex_mem_pipe'
+[INFO (VERI-1018)] mem_stage.v(72): compiling module 'mem_stage'
+[INFO (VERI-1018)] data_mem_top.v(1): compiling module 'data_mem_top'
+[INFO (VERI-1018)] store_datapath.v(37): compiling module 'store_datapath'
+[INFO (VERI-1018)] data_memory.v(1): compiling module 'data_memory'
+[WARN (VERI-9033)] data_memory.v(13): array mem (size 8192) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[WARN (VERI-1060)] data_memory.v(21): 'initial' construct ignored
+[INFO (VERI-1018)] load_datapath.v(6): compiling module 'load_datapath'
+[INFO (VERI-1018)] mem_wb_pipe.v(1): compiling module 'mem_wb_pipe'
+[INFO (VERI-1018)] wb_stage.v(1): compiling module 'wb_stage'
+INFO (ISW003): Top module name is "rv32i_core".
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+rv32i_core
+[<embedded>] % 
+[<embedded>] % # ------------------------------------
+[<embedded>] % # Clock & Reset
+[<embedded>] % # ------------------------------------
+[<embedded>] % clock clk
+[<embedded>] % reset rst
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst".
+[<embedded>] % 
+[<embedded>] % # ------------------------------------
+[<embedded>] % # Run Superlint
+[<embedded>] % # ------------------------------------
+[<embedded>] % check_superlint -extract
+INFO (ISL018): Started extraction of structural checks
+INFO (ISL018): Started building clock tree
+INFO (ISL018): Finished building clock tree
+INFO (ISL018): Started building reset tree
+INFO (ISL018): Finished building reset tree
+INFO (ISL018): Violation Count: Errors = 0 Warnings = 339 Info = 0
+339
+[<embedded>] % 
+[<embedded>] % #---------------------------------------------
+[<embedded>] % # Waivers
+[<embedded>] % # ----------------------------------------------
+[<embedded>] % #
+[<embedded>] % check_superlint -waiver -add -tag ARY_MS_DRNG -comment "ordering of bit should be decending order but in memory the depth i used in ascending order so it can be ignored" 
+(1) ( POIType=*  Category=*  Tag=ARY_MS_DRNG  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+1
+[<embedded>] % 
+[<embedded>] % check_superlint -waiver -add -tag CAS_NR_DEFX -comment "default value should be unknown but default condition for my design should be all zeros not unknoun values so this warning can be ignore" 
+(2) ( POIType=*  Category=*  Tag=CAS_NR_DEFX  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+2
+[<embedded>] % 
+[<embedded>] % check_superlint -waiver -add -tag OTP_NR_ASYA -comment "output should be synchronous but which modules does not have clock, having this warning in output port and which module having clock, reading data is asynchronous. so this warning can be ignore . For BTB design The flagged output ports (rd_valid*, rd_tag*, rd_target*, rd_state*, hit*,predict_valid, predict_taken, predict_target) are intentionally driven by combinational logic as part of a zero-cycle BTB (Branch Target Buffer) fetch path. The BTB is accessed in the instruction fetch stage and must produce branch prediction results (hit, taken, target) in the same cycle as the PC.Registering these outputs would introduce an additional cycle of latency and violate the required branch prediction timing.This behavior is architecturally correct, synthesizable The asynchronous assignments are intentional, safe, and required by design." 
+(3) ( POIType=*  Category=*  Tag=OTP_NR_ASYA  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+3
+[<embedded>] % 
+[<embedded>] % check_superlint -waiver -add -tag IDX_NR_DTTY -comment "index should be 2 state data type but in memory index is address which is of wire data type that is 4 state data type so this warning can be ignore" 
+(4) ( POIType=*  Category=*  Tag=IDX_NR_DTTY  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+4
+[<embedded>] % 
+[<embedded>] % check_superlint -waiver -add -tag  INS_NR_INPR -comment "input should be register, but some inputs is taken from the combinational module so this warning can ignore" 
+(5) ( POIType=*  Category=*  Tag=INS_NR_INPR  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+5
+[<embedded>] % 
+[<embedded>] % check_superlint -waiver -add -tag MOD_IS_SYAS -comment "having both synchronous and asynchronous logic, but writing to memory is synchronous and reading from memory is asynchronous.so this warning can be ignore. In modules such as BTB storage and dynamic branch predictor logic, combinational logic is used for same-cycle read paths and next-state computation, while sequential logic is used for state storage and updates. This separation is architecturally required to meet instruction fetch and branch prediction timing requirements. This mixed synchronous/asynchronous structure is intentional,synthesizable, and consistent with standard BTB and branch predictor implementations. No functional or timing risk exists." 
+(6) ( POIType=*  Category=*  Tag=MOD_IS_SYAS  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+6
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % check_superlint -waiver -add -tag ASG_NR_POVF -comment "PC arithmetic overflow is intentional due to fixed 32-bit PC width; MSB truncation is architecturally valid.Arithmetic is modulo-XLEN by RISC-V spec. Overflow bits are intentionally discarded for PC, branch/jump targets, and ALU results"
+(7) ( POIType=*  Category=*  Tag=ASG_NR_POVF  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+7
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % check_superlint -waiver -add -tag MOD_NS_GLGC -comment "glue logic, but for synthesis we wand some output ports so glue logic is used"
+(8) ( POIType=*  Category=*  Tag=MOD_NS_GLGC  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+8
+[<embedded>] % 
+[<embedded>] % check_superlint -waiver -add -tag FLP_NO_ASRT -comment "Register file flip-flops intentionally omit asynchronous reset. Register contents are architecturally undefined after reset and initialized by software. This reduces area and reset fanout."
+(9) ( POIType=*  Category=*  Tag=FLP_NO_ASRT  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+9
+[<embedded>] % 
+[<embedded>] % check_superlint -waiver -add -tag NET_NO_LDDR -comment "Instruction and data memory arrays are initialized externally (HEX/mask ROM). Lint cannot infer these drivers; behavior is correct by design"
+(10) ( POIType=*  Category=*  Tag=NET_NO_LDDR  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+10
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % #-------------------------------
+[<embedded>] % #save report 
+[<embedded>] % #------------------------------------
+[<embedded>] % 
+[<embedded>] % check_superlint -report -violation -property -order category -file  /home/sgeuser83/Desktop/sourabh/sd_lint/riscv_work/sd/database/riscv1.html -force -html -launch_html_browser -detailed -include_design_build
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % #redirect -file superlint_full_report1.txt {	    check_superlint -report	}
+[<embedded>] % 
+[<embedded>] % source run.tcl
+INFO (IPF121): Cleared environment completely for new design analysis.
+[-- (VERI-1482)] Analyzing Verilog file 'inst_mem.v'
+[-- (VERI-1482)] Analyzing Verilog file 'pc_reg.v'
+[-- (VERI-1482)] Analyzing Verilog file 'if_stage_simple_btb.v'
+[-- (VERI-1482)] Analyzing Verilog file 'dynamic_branch_predictor.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_file.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_read.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_write.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb.v'
+[-- (VERI-1482)] Analyzing Verilog file 'register_file.v'
+[-- (VERI-1482)] Analyzing Verilog file 'control_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'top_decode.v'
+[-- (VERI-1482)] Analyzing Verilog file 'decode_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'arithmetic_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'logical_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'shift_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'compare_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'branch_jump_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'alu_top32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'forwarding_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'execute_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'ex_mem_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_memory.v'
+[-- (VERI-1482)] Analyzing Verilog file 'load_datapath.v'
+[-- (VERI-1482)] Analyzing Verilog file 'store_datapath.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_mem_top.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mem_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mem_wb_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'wb_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'if_id_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'id_ex_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'hazard_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'rv32i_core.v'
+[INFO (HIER-8002)] rv32i_core.v(456): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] rv32i_core.v(5): compiling module 'rv32i_core'
+[INFO (VERI-1018)] if_stage_simple_btb.v(1): compiling module 'if_stage_simple_btb'
+[INFO (VERI-1018)] pc_reg.v(2): compiling module 'pc_reg'
+[INFO (VERI-1018)] btb.v(1): compiling module 'btb'
+[INFO (VERI-1018)] btb_read.v(2): compiling module 'btb_read'
+[INFO (VERI-1018)] btb_write.v(3): compiling module 'btb_write'
+[INFO (VERI-1018)] dynamic_branch_predictor.v(6): compiling module 'dynamic_branch_predictor'
+[INFO (VERI-1018)] btb_file.v(5): compiling module 'btb_file'
+[INFO (VERI-1018)] inst_mem.v(1): compiling module 'inst_mem'
+[WARN (VERI-9033)] inst_mem.v(11): array mem (size 32768) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[INFO (VERI-1018)] if_id_pipe.v(2): compiling module 'if_id_pipe'
+[INFO (VERI-1018)] top_decode.v(2): compiling module 'top_decode'
+[INFO (VERI-1018)] decode_unit.v(1): compiling module 'decode_unit'
+[INFO (VERI-1018)] control_unit.v(1): compiling module 'control_unit'
+[INFO (VERI-1018)] register_file.v(1): compiling module 'register_file'
+[INFO (VERI-1018)] hazard_unit.v(1): compiling module 'hazard_unit'
+[INFO (VERI-1018)] id_ex_pipe.v(1): compiling module 'id_ex_pipe'
+[INFO (VERI-1018)] forwarding_unit.v(2): compiling module 'forwarding_unit'
+[INFO (VERI-1018)] execute_stage.v(1): compiling module 'execute_stage'
+[INFO (VERI-1018)] alu_top32.v(4): compiling module 'alu_top32'
+[INFO (VERI-1018)] arithmetic_unit32.v(64): compiling module 'arithmetic_unit32'
+[INFO (VERI-1018)] logical_unit32.v(1): compiling module 'logical_unit32'
+[INFO (VERI-1018)] shift_unit32.v(68): compiling module 'shift_unit32'
+[INFO (VERI-1018)] compare_unit32.v(1): compiling module 'compare_unit32'
+[INFO (VERI-1018)] branch_jump_unit.v(4): compiling module 'branch_jump_unit'
+[INFO (VERI-1018)] ex_mem_pipe.v(87): compiling module 'ex_mem_pipe'
+[INFO (VERI-1018)] mem_stage.v(72): compiling module 'mem_stage'
+[INFO (VERI-1018)] data_mem_top.v(1): compiling module 'data_mem_top'
+[INFO (VERI-1018)] store_datapath.v(37): compiling module 'store_datapath'
+[INFO (VERI-1018)] data_memory.v(1): compiling module 'data_memory'
+[WARN (VERI-9033)] data_memory.v(13): array mem (size 8192) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[INFO (VERI-1018)] load_datapath.v(6): compiling module 'load_datapath'
+[INFO (VERI-1018)] mem_wb_pipe.v(1): compiling module 'mem_wb_pipe'
+[INFO (VERI-1018)] wb_stage.v(1): compiling module 'wb_stage'
+INFO (ISW003): Top module name is "rv32i_core".
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst".
+INFO (ISL018): Started extraction of structural checks
+INFO (ISL018): Started building clock tree
+INFO (ISL018): Finished building clock tree
+INFO (ISL018): Started building reset tree
+INFO (ISL018): Finished building reset tree
+INFO (ISL018): Violation Count: Errors = 0 Warnings = 336 Info = 0
+(1) ( POIType=*  Category=*  Tag=ARY_MS_DRNG  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(2) ( POIType=*  Category=*  Tag=CAS_NR_DEFX  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(3) ( POIType=*  Category=*  Tag=OTP_NR_ASYA  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(4) ( POIType=*  Category=*  Tag=IDX_NR_DTTY  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(5) ( POIType=*  Category=*  Tag=INS_NR_INPR  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(6) ( POIType=*  Category=*  Tag=MOD_IS_SYAS  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(7) ( POIType=*  Category=*  Tag=ASG_NR_POVF  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(8) ( POIType=*  Category=*  Tag=MOD_NS_GLGC  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(9) ( POIType=*  Category=*  Tag=FLP_NO_ASRT  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(10) ( POIType=*  Category=*  Tag=NET_NO_LDDR  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+[<embedded>] % source run.tcl
+INFO (IPF121): Cleared environment completely for new design analysis.
+[-- (VERI-1482)] Analyzing Verilog file 'inst_mem.v'
+[-- (VERI-1482)] Analyzing Verilog file 'pc_reg.v'
+[-- (VERI-1482)] Analyzing Verilog file 'if_stage_simple_btb.v'
+[-- (VERI-1482)] Analyzing Verilog file 'dynamic_branch_predictor.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_file.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_read.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_write.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb.v'
+[-- (VERI-1482)] Analyzing Verilog file 'register_file.v'
+[-- (VERI-1482)] Analyzing Verilog file 'control_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'top_decode.v'
+[-- (VERI-1482)] Analyzing Verilog file 'decode_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'arithmetic_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'logical_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'shift_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'compare_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'branch_jump_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'alu_top32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'forwarding_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'execute_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'ex_mem_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_memory.v'
+[-- (VERI-1482)] Analyzing Verilog file 'load_datapath.v'
+[-- (VERI-1482)] Analyzing Verilog file 'store_datapath.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_mem_top.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mem_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mem_wb_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'wb_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'if_id_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'id_ex_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'hazard_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'rv32i_core.v'
+[INFO (HIER-8002)] rv32i_core.v(456): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] rv32i_core.v(5): compiling module 'rv32i_core'
+[INFO (VERI-1018)] if_stage_simple_btb.v(1): compiling module 'if_stage_simple_btb'
+[INFO (VERI-1018)] pc_reg.v(2): compiling module 'pc_reg'
+[INFO (VERI-1018)] btb.v(1): compiling module 'btb'
+[INFO (VERI-1018)] btb_read.v(2): compiling module 'btb_read'
+[INFO (VERI-1018)] btb_write.v(3): compiling module 'btb_write'
+[INFO (VERI-1018)] dynamic_branch_predictor.v(6): compiling module 'dynamic_branch_predictor'
+[INFO (VERI-1018)] btb_file.v(5): compiling module 'btb_file'
+[INFO (VERI-1018)] inst_mem.v(1): compiling module 'inst_mem'
+[WARN (VERI-9033)] inst_mem.v(11): array mem (size 32768) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[INFO (VERI-1018)] if_id_pipe.v(2): compiling module 'if_id_pipe'
+[INFO (VERI-1018)] top_decode.v(2): compiling module 'top_decode'
+[INFO (VERI-1018)] decode_unit.v(1): compiling module 'decode_unit'
+[INFO (VERI-1018)] control_unit.v(1): compiling module 'control_unit'
+[INFO (VERI-1018)] register_file.v(1): compiling module 'register_file'
+[INFO (VERI-1018)] hazard_unit.v(1): compiling module 'hazard_unit'
+[INFO (VERI-1018)] id_ex_pipe.v(1): compiling module 'id_ex_pipe'
+[INFO (VERI-1018)] forwarding_unit.v(2): compiling module 'forwarding_unit'
+[INFO (VERI-1018)] execute_stage.v(1): compiling module 'execute_stage'
+[INFO (VERI-1018)] alu_top32.v(4): compiling module 'alu_top32'
+[INFO (VERI-1018)] arithmetic_unit32.v(64): compiling module 'arithmetic_unit32'
+[INFO (VERI-1018)] logical_unit32.v(1): compiling module 'logical_unit32'
+[INFO (VERI-1018)] shift_unit32.v(68): compiling module 'shift_unit32'
+[INFO (VERI-1018)] compare_unit32.v(1): compiling module 'compare_unit32'
+[INFO (VERI-1018)] branch_jump_unit.v(4): compiling module 'branch_jump_unit'
+[INFO (VERI-1018)] ex_mem_pipe.v(87): compiling module 'ex_mem_pipe'
+[INFO (VERI-1018)] mem_stage.v(72): compiling module 'mem_stage'
+[INFO (VERI-1018)] data_mem_top.v(1): compiling module 'data_mem_top'
+[INFO (VERI-1018)] store_datapath.v(37): compiling module 'store_datapath'
+[INFO (VERI-1018)] data_memory.v(1): compiling module 'data_memory'
+[WARN (VERI-9033)] data_memory.v(13): array mem (size 8192) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[INFO (VERI-1018)] load_datapath.v(6): compiling module 'load_datapath'
+[INFO (VERI-1018)] mem_wb_pipe.v(1): compiling module 'mem_wb_pipe'
+[INFO (VERI-1018)] wb_stage.v(1): compiling module 'wb_stage'
+INFO (ISW003): Top module name is "rv32i_core".
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst".
+WARNING (WRS005): Overriding setting from previous "reset" commands. You must specify all reset information in one command. Refer to "help reset" for guidance.
+    For message help, type "help -message WRS005".
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst_im".
+INFO (ISL018): Started extraction of structural checks
+INFO (ISL018): Started building clock tree
+INFO (ISL018): Finished building clock tree
+INFO (ISL018): Started building reset tree
+INFO (ISL018): Finished building reset tree
+INFO (ISL018): Violation Count: Errors = 0 Warnings = 336 Info = 0
+(1) ( POIType=*  Category=*  Tag=ARY_MS_DRNG  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(2) ( POIType=*  Category=*  Tag=CAS_NR_DEFX  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(3) ( POIType=*  Category=*  Tag=OTP_NR_ASYA  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(4) ( POIType=*  Category=*  Tag=IDX_NR_DTTY  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(5) ( POIType=*  Category=*  Tag=INS_NR_INPR  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(6) ( POIType=*  Category=*  Tag=MOD_IS_SYAS  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(7) ( POIType=*  Category=*  Tag=ASG_NR_POVF  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(8) ( POIType=*  Category=*  Tag=MOD_NS_GLGC  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(9) ( POIType=*  Category=*  Tag=FLP_NO_ASRT  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(10) ( POIType=*  Category=*  Tag=NET_NO_LDDR  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(11) ( POIType=*  Category=*  Tag=MOD_NO_IPRG  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+[<embedded>] % source run.tcl
+INFO (IPF121): Cleared environment completely for new design analysis.
+[-- (VERI-1482)] Analyzing Verilog file 'inst_mem.v'
+[-- (VERI-1482)] Analyzing Verilog file 'pc_reg.v'
+[-- (VERI-1482)] Analyzing Verilog file 'if_stage_simple_btb.v'
+[-- (VERI-1482)] Analyzing Verilog file 'dynamic_branch_predictor.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_file.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_read.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb_write.v'
+[-- (VERI-1482)] Analyzing Verilog file 'btb.v'
+[-- (VERI-1482)] Analyzing Verilog file 'register_file.v'
+[-- (VERI-1482)] Analyzing Verilog file 'control_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'top_decode.v'
+[-- (VERI-1482)] Analyzing Verilog file 'decode_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'arithmetic_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'logical_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'shift_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'compare_unit32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'branch_jump_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'alu_top32.v'
+[-- (VERI-1482)] Analyzing Verilog file 'forwarding_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'execute_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'ex_mem_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_memory.v'
+[-- (VERI-1482)] Analyzing Verilog file 'load_datapath.v'
+[-- (VERI-1482)] Analyzing Verilog file 'store_datapath.v'
+[-- (VERI-1482)] Analyzing Verilog file 'data_mem_top.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mem_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'mem_wb_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'wb_stage.v'
+[-- (VERI-1482)] Analyzing Verilog file 'if_id_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'id_ex_pipe.v'
+[-- (VERI-1482)] Analyzing Verilog file 'hazard_unit.v'
+[-- (VERI-1482)] Analyzing Verilog file 'rv32i_core.v'
+[INFO (HIER-8002)] rv32i_core.v(456): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] rv32i_core.v(5): compiling module 'rv32i_core'
+[INFO (VERI-1018)] if_stage_simple_btb.v(1): compiling module 'if_stage_simple_btb'
+[INFO (VERI-1018)] pc_reg.v(2): compiling module 'pc_reg'
+[INFO (VERI-1018)] btb.v(1): compiling module 'btb'
+[INFO (VERI-1018)] btb_read.v(2): compiling module 'btb_read'
+[INFO (VERI-1018)] btb_write.v(3): compiling module 'btb_write'
+[INFO (VERI-1018)] dynamic_branch_predictor.v(6): compiling module 'dynamic_branch_predictor'
+[INFO (VERI-1018)] btb_file.v(5): compiling module 'btb_file'
+[INFO (VERI-1018)] inst_mem.v(1): compiling module 'inst_mem'
+[WARN (VERI-9033)] inst_mem.v(11): array mem (size 32768) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[INFO (VERI-1018)] if_id_pipe.v(2): compiling module 'if_id_pipe'
+[INFO (VERI-1018)] top_decode.v(2): compiling module 'top_decode'
+[INFO (VERI-1018)] decode_unit.v(1): compiling module 'decode_unit'
+[INFO (VERI-1018)] control_unit.v(1): compiling module 'control_unit'
+[INFO (VERI-1018)] register_file.v(1): compiling module 'register_file'
+[INFO (VERI-1018)] hazard_unit.v(1): compiling module 'hazard_unit'
+[INFO (VERI-1018)] id_ex_pipe.v(1): compiling module 'id_ex_pipe'
+[INFO (VERI-1018)] forwarding_unit.v(2): compiling module 'forwarding_unit'
+[INFO (VERI-1018)] execute_stage.v(1): compiling module 'execute_stage'
+[INFO (VERI-1018)] alu_top32.v(4): compiling module 'alu_top32'
+[INFO (VERI-1018)] arithmetic_unit32.v(64): compiling module 'arithmetic_unit32'
+[INFO (VERI-1018)] logical_unit32.v(1): compiling module 'logical_unit32'
+[INFO (VERI-1018)] shift_unit32.v(68): compiling module 'shift_unit32'
+[INFO (VERI-1018)] compare_unit32.v(1): compiling module 'compare_unit32'
+[INFO (VERI-1018)] branch_jump_unit.v(4): compiling module 'branch_jump_unit'
+[INFO (VERI-1018)] ex_mem_pipe.v(87): compiling module 'ex_mem_pipe'
+[INFO (VERI-1018)] mem_stage.v(72): compiling module 'mem_stage'
+[INFO (VERI-1018)] data_mem_top.v(1): compiling module 'data_mem_top'
+[INFO (VERI-1018)] store_datapath.v(37): compiling module 'store_datapath'
+[INFO (VERI-1018)] data_memory.v(1): compiling module 'data_memory'
+[WARN (VERI-9033)] data_memory.v(13): array mem (size 8192) automatically BLACK-BOXED. Use the "elaborate -bbox_a" command to prevent automatic black-boxing.
+[INFO (VERI-1018)] load_datapath.v(6): compiling module 'load_datapath'
+[INFO (VERI-1018)] mem_wb_pipe.v(1): compiling module 'mem_wb_pipe'
+[INFO (VERI-1018)] wb_stage.v(1): compiling module 'wb_stage'
+INFO (ISW003): Top module name is "rv32i_core".
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst".
+WARNING (WRS005): Overriding setting from previous "reset" commands. You must specify all reset information in one command. Refer to "help reset" for guidance.
+    For message help, type "help -message WRS005".
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst_im".
+INFO (ISL018): Started extraction of structural checks
+INFO (ISL018): Started building clock tree
+INFO (ISL018): Finished building clock tree
+INFO (ISL018): Started building reset tree
+INFO (ISL018): Finished building reset tree
+INFO (ISL018): Violation Count: Errors = 0 Warnings = 336 Info = 0
+(1) ( POIType=*  Category=*  Tag=ARY_MS_DRNG  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(2) ( POIType=*  Category=*  Tag=CAS_NR_DEFX  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(3) ( POIType=*  Category=*  Tag=OTP_NR_ASYA  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(4) ( POIType=*  Category=*  Tag=IDX_NR_DTTY  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(5) ( POIType=*  Category=*  Tag=INS_NR_INPR  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(6) ( POIType=*  Category=*  Tag=MOD_IS_SYAS  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(7) ( POIType=*  Category=*  Tag=ASG_NR_POVF  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(8) ( POIType=*  Category=*  Tag=MOD_NS_GLGC  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(9) ( POIType=*  Category=*  Tag=FLP_NO_ASRT  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(10) ( POIType=*  Category=*  Tag=NET_NO_LDDR  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+(11) ( POIType=*  Category=*  Tag=MOD_NO_IPRG  Module=*  Instance=*  SourceLocation=* * * * *  Message=*  Expression=*  Hierarchy=*  Arguments=* )
+file "superlint_full_report1.txt" exists. Use "-force" to overwrite, or "-append" to append.
+

@@ -1,0 +1,60 @@
+2023-02-10 04:15:09.861751 (62743) main____ INFO    ----------------------------------------
+2023-02-10 04:15:09.861884 (62743) main____ INFO    JasperGold version info
+2023-02-10 04:15:09.861902 (62743) main____ INFO      tool      : JasperGold 2019.12
+2023-02-10 04:15:09.861916 (62743) main____ INFO      version   : 2019.12p002 64 bits
+2023-02-10 04:15:09.861927 (62743) main____ INFO      build date: 2020.02.27 18:30:54 PST
+2023-02-10 04:15:09.861935 (62743) main____ INFO    ----------------------------------------
+2023-02-10 04:15:09.861950 (62743) main____ INFO    Runtime info:
+2023-02-10 04:15:09.861960 (62743) main____ INFO      platform  : Linux 3.10.0-1160.119.1.el7.x86_64 x86_64
+2023-02-10 04:15:09.861973 (62743) main____ INFO      hostname  : compute-srv5.atme.in
+2023-02-10 04:15:09.861981 (62743) main____ INFO      pid       : 62743
+2023-02-10 04:15:09.861990 (62743) main____ INFO      arguments : '-style' 'windows' '-superlint' 'run.tcl'
+2023-02-10 04:15:09.862004 (62743) main____ INFO      locale    : ISO-8859-1
+2023-02-10 04:15:09.862016 (62743) main____ INFO    ----------------------------------------
+2023-02-10 04:15:09.862024 (62743) main____ INFO    System resource limits info:
+2023-02-10 04:15:09.862033 (62743) main____ INFO      virtual memory: unlimited
+2023-02-10 04:15:09.862042 (62743) main____ INFO      cpu time      : unlimited
+2023-02-10 04:15:09.862066 (62743) main____ INFO      stack size    : 8388608 B
+2023-02-10 04:15:09.862079 (62743) main____ INFO      core file size: 0 B
+2023-02-10 04:15:09.862094 (62743) main____ INFO      open files    : 1024
+2023-02-10 04:15:09.862103 (62743) main____ INFO      file size     : unlimited
+2023-02-10 04:15:09.862110 (62743) main____ INFO    ----------------------------------------
+2023-02-10 04:15:09.862118 (62743) main____ INFO    Memory statistics:
+2023-02-10 04:15:09.862126 (62743) main____ INFO      total physical memory  : 792277964 kB
+2023-02-10 04:15:09.862133 (62743) main____ INFO      free physical memory   : 529556144 kB
+2023-02-10 04:15:09.862141 (62743) main____ INFO      committed address space: 358146488 kB
+2023-02-10 04:15:09.862148 (62743) main____ INFO    ----------------------------------------
+2023-02-10 04:15:09.862204 (62743) main____ INFO    Important environment variables:
+2023-02-10 04:15:09.862224 (62743) main____ INFO      CDS_LIC_FILE   : '5280@rbcadence'
+2023-02-10 04:15:09.862236 (62743) main____ INFO      DISPLAY        : ':16'
+2023-02-10 04:15:09.862258 (62743) main____ INFO      EDITOR         : 'gedit'
+2023-02-10 04:15:09.862268 (62743) main____ INFO      LANG           : 'en_US'
+2023-02-10 04:15:09.862277 (62743) main____ INFO      LM_LICENSE_FILE: '5280@rbcadence'
+2023-02-10 04:15:09.862284 (62743) main____ INFO    ----------------------------------------
+2023-02-10 04:15:09.862977 (62743) lic_core INFO    Initializing license system ...
+2023-02-10 04:15:09.865900 (62743) lic_core INFO    ... license system initialized.
+2023-02-10 04:15:09.867719 (62743) lic__man INFO    Claim 'main' for <ui>.
+2023-02-10 04:15:09.867788 (62743) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2023-02-10 04:15:09.883505 (62743) lic_core INFO    ... (1) checkout succeeded
+2023-02-10 04:15:09.883593 (62743) lic__man INFO    Claim 'superlint' for <ui>.
+2023-02-10 04:15:09.883625 (62743) lic_core INFO    (2) checking out 'jasper_afl' ...
+2023-02-10 04:15:09.898552 (62743) lic_core INFO    ... (2) checkout succeeded
+2023-02-10 04:15:09.899401 (62743) main____ INFO    Tool inactivity delay is 480000 ms.
+2023-02-10 04:15:10.684536 (62743) lic__man INFO    Claim 'superlint' for <ui>.
+2023-02-10 04:15:11.175127 (62743) lic__man INFO    Unclaim 'superlint' for <ui>.
+2023-02-10 04:15:11.175219 (62743) lic__man INFO    Claim 'superlint' for <ui>.
+2023-02-10 04:15:11.181408 (62743) session_ INFO    Starting analysis session with session id 'session_0' (launcher: <local>) ...
+2023-02-10 04:15:11.184111 (62743) session_ INFO    Analysis session with session id 'session_0' started (pid: 62768)
+2023-02-10 04:15:12.465120 (62743) session_ INFO    Analysis session 'session_0' connected to the console (host: 127.0.0.1:43570)
+2023-02-10 04:15:13.781615 (62743) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-10 04:15:15.162144 (62743) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-10 04:15:15.248482 (62743) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-02-10 04:18:25.967336 (62743) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-10 04:18:27.287752 (62743) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-10 04:18:27.367846 (62743) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-02-10 04:19:47.731716 (62743) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-10 04:19:49.071677 (62743) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-10 04:19:49.147194 (62743) lic__man INFO    Claim 'superlint' for 'session_0'.
+2023-02-10 04:20:07.849370 (62743) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-10 04:20:09.144712 (62743) lic__man INFO    Unclaim everything for 'session_0'.
+2023-02-10 04:20:09.217499 (62743) lic__man INFO    Claim 'superlint' for 'session_0'.

@@ -1,0 +1,26 @@
+========================
+  VIOLATIONS SUMMARY  
+========================
+
+Domain: LINT        
+  Total             :336
+  Error             :0
+  Warning           :0
+  Info              :0
+  Waived            :336
+
+  Category          :CODINGSTYLE
+    Total           :140
+    Error           :0
+    Warning         :0
+    Info            :0
+    Waived          :140
+
+  Category          :STRUCTURAL
+    Total           :196
+    Error           :0
+    Warning         :0
+    Info            :0
+    Waived          :196
+
+
